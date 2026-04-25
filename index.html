@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Chess Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="ui-container">
+        <div id="turn-indicator">White's Turn</div>
+        <div id="game-info">
+            <div id="captured-white" class="captured-pieces"></div>
+            <div id="captured-black" class="captured-pieces"></div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+    </div>
+    <div id="board-container"></div>
+    <div id="message-overlay"></div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
+
